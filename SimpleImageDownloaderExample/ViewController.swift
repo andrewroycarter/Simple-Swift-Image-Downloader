@@ -8,18 +8,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet var imageView: UIImageView!
+    private let imageURL = URL(string: "https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg")!
+    private let imageGetter = ImageGetter()
+
+    @IBAction func getImageButtonPressed() {
+        imageGetter.getImage(from: imageURL) { [weak self] result in
+            guard let strongSelf = self else {
+                return
+            }
+
+            DispatchQueue.main.async {
+                switch result {
+                case .ok(let image):
+                    strongSelf.imageView.image = image
+
+                case .error(let error):
+                    print("Failed to get image: \(error)")
+                    strongSelf.imageView.image = nil
+                }
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

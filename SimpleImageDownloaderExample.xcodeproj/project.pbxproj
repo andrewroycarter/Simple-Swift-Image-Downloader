@@ -12,6 +12,8 @@
 		22BD7EE01F81710E003F4FD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BD7EDE1F81710E003F4FD2 /* Main.storyboard */; };
 		22BD7EE21F81710E003F4FD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22BD7EE11F81710E003F4FD2 /* Assets.xcassets */; };
 		22BD7EE51F81710E003F4FD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22BD7EE31F81710E003F4FD2 /* LaunchScreen.storyboard */; };
+		22BD7EED1F817119003F4FD2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD7EEC1F817119003F4FD2 /* Result.swift */; };
+		22BD7EEF1F81712D003F4FD2 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BD7EEE1F81712D003F4FD2 /* ImageGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		22BD7EE11F81710E003F4FD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22BD7EE41F81710E003F4FD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22BD7EE61F81710E003F4FD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22BD7EEC1F817119003F4FD2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		22BD7EEE1F81712D003F4FD2 /* ImageGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				22BD7EE11F81710E003F4FD2 /* Assets.xcassets */,
 				22BD7EE31F81710E003F4FD2 /* LaunchScreen.storyboard */,
 				22BD7EE61F81710E003F4FD2 /* Info.plist */,
+				22BD7EEC1F817119003F4FD2 /* Result.swift */,
+				22BD7EEE1F81712D003F4FD2 /* ImageGetter.swift */,
 			);
 			path = SimpleImageDownloaderExample;
 			sourceTree = "<group>";
@@ -136,7 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22BD7EED1F817119003F4FD2 /* Result.swift in Sources */,
 				22BD7EDD1F81710E003F4FD2 /* ViewController.swift in Sources */,
+				22BD7EEF1F81712D003F4FD2 /* ImageGetter.swift in Sources */,
 				22BD7EDB1F81710E003F4FD2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
